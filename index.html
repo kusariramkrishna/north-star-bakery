@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>North Star Bakery</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #38271f;
+      background-color: #fffaf3;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #593b2b;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    .logo {
+      width: 120px;
+      max-width: 100%;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 12px;
+      text-decoration: none;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    section {
+      padding: 25px 0;
+    }
+
+    .hero-image, .bakery-video {
+      width: 100%;
+      max-width: 700px;
+      border-radius: 10px;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .product {
+      flex: 1 1 250px;
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .product img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    footer {
+      background-color: #593b2b;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img class="logo" src="bakery-logo_c.png" alt="North Star Bakery logo">
+    <h1>North Star Bakery</h1>
+    <p>Freshly baked goodness, made with care.</p>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#baked-goods">Baked Goods</a>
+      <a href="#behind-the-scenes">Behind the Scenes</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>Welcome to North Star Bakery</h2>
+      <p>
+        Welcome! Explore our bakery and discover delicious breads and
+        baked goods made to brighten your day.
+      </p>
+      <img class="hero-image" src="bakery-storefront_c.png"
+           alt="North Star Bakery storefront">
+    </section>
+
+    <section id="baked-goods">
+      <h2>Our Baked Goods</h2>
+
+      <div class="products">
+        <article class="product">
+          <img src="bakery-bread_c.png" alt="Freshly baked bread">
+          <h3>Fresh Bread</h3>
+          <p>Enjoy the comforting taste of freshly baked bread.</p>
+        </article>
+
+        <article class="product">
+          <img src="bakery-signature-loaf_c.png" alt="Signature bakery loaf">
+          <h3>Signature Loaf</h3>
+          <p>Discover our signature loaf, baked with care.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="behind-the-scenes">
+      <h2>Behind the Scenes</h2>
+      <p>Take a look inside our bakery.</p>
+      <video class="bakery-video" controls>
+        <source src="bakery-behind-scenes_c.mp4" type="video/mp4">
+        Your browser does not support this video.
+      </video>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; North Star Bakery</p>
+  </footer>
+</body>
+</html>
