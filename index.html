@@ -3,132 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>North Star Bakery</title>
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      color: #38271f;
-      background-color: #fffaf3;
-      line-height: 1.6;
-    }
-
-    header {
-      background-color: #593b2b;
-      color: white;
-      text-align: center;
-      padding: 30px 20px;
-    }
-
-    .logo {
-      width: 120px;
-      max-width: 100%;
-    }
-
-    nav a {
-      color: white;
-      margin: 0 12px;
-      text-decoration: none;
-    }
-
-    main {
-      max-width: 1000px;
-      margin: auto;
-      padding: 20px;
-    }
-
-    section {
-      padding: 25px 0;
-    }
-
-    .hero-image, .bakery-video {
-      width: 100%;
-      max-width: 700px;
-      border-radius: 10px;
-    }
-
-    .products {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-
-    .product {
-      flex: 1 1 250px;
-      background: white;
-      padding: 15px;
-      border-radius: 10px;
-    }
-
-    .product img {
-      width: 100%;
-      border-radius: 8px;
-    }
-
-    footer {
-      background-color: #593b2b;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-  </style>
+  <title>Home | North Star Bakery</title>
 </head>
-
 <body>
   <header>
-    <img class="logo" src="bakery-logo_c.png" alt="North Star Bakery logo">
-    <h1>North Star Bakery</h1>
-    <p>Freshly baked goodness, made with care.</p>
+    <img src="bakery-logo_c.png" alt="North Star Bakery logo" width="150">
+    <h1>Welcome to North Star Bakery</h1>
 
-    <nav>
-      <a href="#about">About</a>
-      <a href="#baked-goods">Baked Goods</a>
-      <a href="#behind-the-scenes">Behind the Scenes</a>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
   <main>
-    <section id="about">
-      <h2>Welcome to North Star Bakery</h2>
+    <section>
+      <h2>Fresh from our neighborhood bakery</h2>
       <p>
-        Welcome! Explore our bakery and discover delicious breads and
-        baked goods made to brighten your day.
+        Welcome to North Star Bakery! We bring neighbors together
+        with freshly baked breads, pastries, and treats.
       </p>
-      <img class="hero-image" src="bakery-storefront_c.png"
-           alt="North Star Bakery storefront">
+      <img src="bakery-storefront_c.png"
+           alt="Bakery storefront displaying freshly baked bread"
+           width="500">
     </section>
 
-    <section id="baked-goods">
-      <h2>Our Baked Goods</h2>
-
-      <div class="products">
-        <article class="product">
-          <img src="bakery-bread_c.png" alt="Freshly baked bread">
-          <h3>Fresh Bread</h3>
-          <p>Enjoy the comforting taste of freshly baked bread.</p>
-        </article>
-
-        <article class="product">
-          <img src="bakery-signature-loaf_c.png" alt="Signature bakery loaf">
-          <h3>Signature Loaf</h3>
-          <p>Discover our signature loaf, baked with care.</p>
-        </article>
-      </div>
+    <section>
+      <h2>What we’re known for</h2>
+      <p>
+        We are known for handmade loaves, comforting pastries,
+        and a warm welcome for our community.
+      </p>
     </section>
 
-    <section id="behind-the-scenes">
-      <h2>Behind the Scenes</h2>
-      <p>Take a look inside our bakery.</p>
-      <video class="bakery-video" controls>
-        <source src="bakery-behind-scenes_c.mp4" type="video/mp4">
-        Your browser does not support this video.
-      </video>
-      <p>Listen to our bakery welcome:</p>
-<audio controls>
-  <source src="bakery-welcome-mixed_c.mp3" type="audio/mpeg">
-  Your browser does not support audio.
-</audio>
+    <section>
+      <h2>Featured item of the week</h2>
+      <p>This week, explore our selection of freshly baked pastries.</p>
+      <picture>
+        <source media="(max-width: 600px)"
+                srcset="bakery-feature-small_c.png">
+        <img src="bakery-feature-large_c.png"
+             alt="Featured bakery item of the week"
+             width="500">
+      </picture>
+    </section>
+
+    <section>
+      <h2>Visit us</h2>
+      <p>Location: 123 Bakery Lane, your neighborhood</p>
+      <p>Hours: Monday–Saturday, 7:00 a.m.–5:00 p.m.</p>
+      <p><em>Location and hours are example information.</em></p>
+      <p><a href="contact.html">Contact us or request a preorder</a></p>
     </section>
   </main>
 
